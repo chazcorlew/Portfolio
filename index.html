@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/8d8d053ec2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-chaz.png" class="logo">
+                <br>
+                <br>
+                    <ul id="sidemenu">
+                        <li> <a href="#header">Home</a></li>
+                        <li> <a href="#about">About</a></li>
+                        <li> <a href="#services">Services</a></li>
+                        <li> <a href="#portfolio">Portfolio</a></li>
+                        <li> <a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>  
+             </nav>
+             
+             <div class="header-text">
+                <h1>UI/UX Designer</h1>
+                <br>
+                <h1>Contract/Freelance Full Stack Software Developer</h1>
+                <br>
+                <h1>3 years of industry experience</h1>
+                <br>
+                <h1>Proficient in OOP and Web Design</h1>
+                <br>
+                <h1>Trained Business Analyst</h1>
+                <br>
+                <h1>Experienced in Hardware and Software troubleshooting</h1>
+             </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------about--------------------------------------------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/proselfie.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>👋 Thanks for stoppping by! <br> I'm an adept Full Stack Web Developer with a flair for crafting seamless digital experiences. <br>
+                        <br>Proficient in Java and Angular, I specialize in designing intuitive interfaces that elevate user interactions. <br> <br>
+
+                        🔄 Adaptable by nature, I excel in dynamic environments, leading with agility and a collaborative mindset. Guided by Agile principles, I ensure projects evolve seamlessly to meet changing requirements. <br> <br>
+                        
+                        💽 Beyond Java and Angular, my skills include SQL and database management, robust unit testing, and a knack for resolving issues promptly. I prioritize user-centric design, delivering solutions that exceed expectations. <br> <br>
+                        
+                        ☁️ Embracing cloud computing, I leverage cutting-edge tech to build scalable solutions. Let's collaborate to bring your digital vision to life! 💻✨ <br> <br>
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">🛠️ Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">💼 Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">📚 Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                     <div class="tab-contents" id="experience">
+                         <ul>
+                            <li><span>2021 - present</span><br>Current employee at Infosys Ltd - Based in Providence, RI</li>
+                            <li><span>2020 - 2021</span><br>Completed 6 month training/coding boot camp at Revature</li>
+                            <li><span>2018 - 2020</span><br>Completed CodeAcademy courses for Java/Angular</li>
+                        </ul> 
+                        </div>
+                        <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2011 - 2013</span><br>Associate degree in Audio Engineering - The Los Angeles Film School</li>
+                        <li><span>2013 - 2015</span><br>Bachelor's degree in Business in Entertainment - The Los Angeles Film School</li>
+                        <li><span>2023</span><br>Completed company provided Business Analysis curriculum - Trinity College</li>
+                        <li><span>2024</span><br>Currently pursuing bachelor's degree in Game Design - Full Sail University</li>
+                    </ul>
+                    <br><br>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------services----------------------------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design & Development</h2>
+                    <p>Crafting captivating digital experiences through expert web design services. 🌐✨</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design & Implementation</h2>
+                    <p>Elevating user interactions with seamless UI/UX design expertise. 🚀🎨</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h2>App Design, Building, & Development</h2>
+                    <p>Shaping innovative app experiences with cutting-edge design. 📱✨</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------portfolio--------------------------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Screenshot (705).jpg">
+                    <div class="layer">
+                        <h3>User view of an employee status tracker application</h3>
+                        <a href="#"><i class="fa-solid fa-satellite-dish"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Screenshot (706).jpg">
+                    <div class="layer">
+                        <h3>Admin view of status tracker</h3>
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Screenshot (384).png">
+                    <div class="layer">
+                        <h3>Account summary view for a banking application</h3>
+                        <a href="#"><i class="fa-solid fa-piggy-bank"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Screenshot (391).png">
+                    <div class="layer">
+                        <h3>Login page for desktop</h3>
+                        <a href="#"><i class="fa-solid fa-money-check-dollar"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/MicrosoftTeams-image (7).png">
+                    <div class="layer">
+                        <h3>Landing page for a banking application</h3>
+                        <a href="#"><i class="fa-solid fa-money-bill-1-wave"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/MicrosoftTeams-image (8).png">
+                    <div class="layer">
+                        <h3>Transactions view of banking application</h3>
+                        <a href="#"><i class="fa-solid fa-wallet"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/set-ui-ux-gui-screens-banking-app-flat-design-template-mobile-apps-responsive-website-wireframes-set-ui-ux-gui-screens-167589890.webp">
+                    <div class="layer">
+                        <h3>Apple iOs banking application UI</h3>
+                        <a href="#"><i class="fa-brands fa-apple"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/androidloginapp.jpg">
+                    <div class="layer">
+                        <h3>Android social network app login</h3>
+                        <a href="#"><i class="fa-brands fa-android"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-------------------------------------------------------------------------contact----------------------------------------------------------------------------------------------------------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-envelope"></i>chaz.corlew@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>661-470-2739</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/chaz-corlew-19b95691/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/chazcorlew"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/en/"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://discord.gg/5GuT9PbT64"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://app.slack.com/client/T06DFC2GWB1/C06EJMRE0M6"><i class="fa-brands fa-slack"></i></a>
+                        <a href="https://www.twitch.tv/unc1e_buddy"><i class="fa-brands fa-twitch"></i></a>
+                        <a href="https://profile.indeed.com/?hl=en_US&co=US&from=gnav-homepage&_ga=2.4730995.1390981164.1705301333-2048331657.1702021457"><i class="fa-solid fa-circle-info"></i></a>
+                    </div>
+                    <a href="images/Screenshot (701) (1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2024 <i class="fa-solid fa-copyright"></i> Chaz Corlew. References Available Upon Request</p>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+   
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxBcwkYGNxFyFk1tV1b3rFsCOyJcO8IVurKnxLvH7jOqfUMUI3RarN6JJxCDuR2-Gh5/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Mesage sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+
+</body>
